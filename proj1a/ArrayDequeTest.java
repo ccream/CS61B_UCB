@@ -1,5 +1,3 @@
-package Project1A;
-
 /** Performs some basic linked list tests. */
 public class ArrayDequeTest {
 	
