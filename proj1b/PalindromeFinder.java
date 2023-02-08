@@ -1,5 +1,3 @@
-package Project1B;
-
 /** This class outputs all palindromes in the words file in the current directory. */
 public class PalindromeFinder {
     /*
