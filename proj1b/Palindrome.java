@@ -1,5 +1,3 @@
-package Project1B;
-
 public class Palindrome {
 	public Deque<Character> wordToDeque(String word) {
 		Deque<Character> result = new LinkedListDeque<Character>();
