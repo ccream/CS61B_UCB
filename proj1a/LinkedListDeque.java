@@ -1,12 +1,13 @@
 public class LinkedListDeque <T> {
-	private Node sentinel;
-	private int size;
-	
 	public class Node  {
 		private T value;
 		private Node prev;
 		private Node next;
 	}
+	
+	private Node sentinel;
+	private int size;
+	
 	
 	public LinkedListDeque()  {
 		sentinel = new Node();
