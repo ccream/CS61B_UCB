@@ -1,5 +1,3 @@
-package Project1B;
-
 public class OffByN implements CharacterComparator{
 	int N;
 	
