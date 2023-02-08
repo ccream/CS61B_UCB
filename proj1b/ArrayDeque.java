@@ -1,5 +1,3 @@
-package Project1B;
-
 public class ArrayDeque <T> implements Deque <T>{
 	private T[] node;
 	private int size;
