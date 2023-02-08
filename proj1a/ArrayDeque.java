@@ -10,14 +10,14 @@ public class ArrayDeque <T>{
 		back = 4;
 	}
 	
-	public int next(int num)  {
+	private int next(int num)  {
 		if(num == node.length-1)  {
 			return 0;
 		}
 		return num+1;
 	}
 	
-	public int prev(int num)  {
+	private int prev(int num)  {
 		if(num == 0)  {
 			return node.length-1;
 		}
