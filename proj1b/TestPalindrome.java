@@ -8,20 +8,21 @@ public class TestPalindrome {
 
     @Test
     public void testWordToDeque() {
-        Deque d = palindrome.wordToDeque("persiflage");
+        Deque d = palindrome.wordToDeque("asdasdasdasdasdcdscdasc");
         String actual = "";
-        for (int i = 0; i < "persiflage".length(); i++) {
+        for (int i = 0; i < "asdasdasdasdasdcdscdasc".length(); i++) {
             actual += d.removeFirst();
         }
-        assertEquals("persiflage", actual);
-        System.out.println(121);
+        assertEquals("asdasdasdasdasdcdscdasc", actual);
     }
     
     @Test
     public void testIsPalindrome()  {
-    	String test = "asdfdsc";
-    	assertFalse(palindrome.isPalindrome(test));
-    	System.out.println(1231);
+    	assertTrue(palindrome.isPalindrome(""));
+    	assertTrue(palindrome.isPalindrome("a"));
+    	assertTrue(palindrome.isPalindrome("asdsa"));
+    	assertFalse(palindrome.isPalindrome("ac"));
+    	assertFalse(palindrome.isPalindrome("asdfdsc"));
     }
     //Uncomment this class once you've created your Palindrome class.
 }
