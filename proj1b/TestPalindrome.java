@@ -24,5 +24,12 @@ public class TestPalindrome {
     	assertFalse(palindrome.isPalindrome("ac"));
     	assertFalse(palindrome.isPalindrome("asdfdsc"));
     }
+    
+    @Test
+    public void testOffByOnePalindrome()  {
+    	 CharacterComparator cc = new OffByOne();
+    	 assertTrue(palindrome.isPalindrome("%amb&", cc));
+    	 assertFalse(palindrome.isPalindrome("asdvfvdsa", cc));
+    }
     //Uncomment this class once you've created your Palindrome class.
 }
