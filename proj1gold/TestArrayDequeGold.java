@@ -4,7 +4,7 @@ import edu.princeton.cs.algs4.*;
 
 public class TestArrayDequeGold {
 	@Test
-	public static void testStudentArray()  {
+	public void testStudentArray()  {
 		StudentArrayDeque<Integer> student = new StudentArrayDeque();
 		ArrayDequeSolution<Integer> solution = new ArrayDequeSolution();
 		String msg = "";
@@ -41,12 +41,7 @@ public class TestArrayDequeGold {
 					solR = solution.removeLast();
 				}
 			}
-			assertEquals(msg, stuR, solR);
+			assertEquals(stuR, solR);
 		}	
 	}
-	public static void main(String[] args)  {
-		testStudentArray();
-		System.out.println(1);
-	}
-	
 }
