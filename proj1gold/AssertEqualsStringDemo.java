@@ -1,5 +1,3 @@
-package Project1G;
-
 import org.junit.Test;
 import edu.princeton.cs.algs4.*;
 import static org.junit.Assert.*;
