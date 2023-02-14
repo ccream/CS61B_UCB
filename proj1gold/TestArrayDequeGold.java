@@ -41,7 +41,7 @@ public class TestArrayDequeGold {
 					solR = solution.removeLast();
 				}
 			}
-			assertEquals(stuR, solR);
+			assertEquals(msg, stuR, solR);
 		}	
 	}
 }
