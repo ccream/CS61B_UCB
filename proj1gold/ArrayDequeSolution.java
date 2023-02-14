@@ -1,5 +1,3 @@
-package Project1G;
-
 import java.util.LinkedList;
 
 /**
