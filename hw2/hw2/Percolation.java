@@ -52,7 +52,7 @@ public class Percolation {
 			record.union(col, N*N);
 			recordNoBot.union(col, N*N);
 		}
-		else if(row == N-1)  {
+		if(row == N-1)  {
 			record.union(row*N+col, N*N+1);
 		}
 	}
