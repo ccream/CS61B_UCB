@@ -27,18 +27,18 @@ public class PercolationStats {
 	}
 	
 	public double mean() {
-        return StdStats.mean(stats);
-    }
+        	return StdStats.mean(stats);
+    	}
 
-    public double stddev() {
-        return StdStats.stddev(stats);
-    }
+    	public double stddev() {
+        	return StdStats.stddev(stats);
+    	}
 
-    public double confidenceLow() {
-        return mean() - 1.96 * stddev() / Math.sqrt(T);
-    }
+    	public double confidenceLow() {
+        	return mean() - 1.96 * stddev() / Math.sqrt(T);
+    	}
 
-    public double confidenceHigh() {
-        return mean() + 1.96 * stddev() / Math.sqrt(T);
-    }
+    	public double confidenceHigh() {
+        	return mean() + 1.96 * stddev() / Math.sqrt(T);
+    	}
 }
