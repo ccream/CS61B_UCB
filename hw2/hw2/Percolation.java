@@ -4,8 +4,8 @@ import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 public class Percolation {
 	private boolean[] open;
-	int N;
-	int count = 0;
+	private int N;
+	private int count = 0;
 	private WeightedQuickUnionUF record;
 	private WeightedQuickUnionUF recordNoBot;
 	
@@ -16,7 +16,7 @@ public class Percolation {
 		this.N = N;
 	}
 	
-	public boolean validPos(int row, int col)  {
+	private boolean validPos(int row, int col)  {
 		if(row < 0 || col < 0 || row >= N || col >= N)  {
 			return false;
 		}
@@ -46,7 +46,7 @@ public class Percolation {
 		}
 		if(col != N-1 && open[row*N+col+1])  {
 			record.union(row*N+col+1, row*N+col);
-			recordNoBot.union(row*N+col+N, row*N+col);
+			recordNoBot.union(row*N+col+1, row*N+col);
 		}
 		if(row == 0)  {
 			record.union(col, N*N);
@@ -80,15 +80,15 @@ public class Percolation {
 	}
 	
 	public static void main(String[] args)  {
-        Percolation percolation = new Percolation(5);
-        percolation.open(0, 0);
-        percolation.open(1, 0);
-        percolation.open(2, 0);
-        percolation.open(3, 0);
-        percolation.open(4, 0);
-        percolation.open(4, 2);
-        percolation.open(3, 2);
-        percolation.open(2, 2);
-        System.out.println(percolation.isFull(2, 2));
+		Percolation percolation = new Percolation(5);
+		percolation.open(0, 0);
+		percolation.open(1, 0);
+		percolation.open(2, 0);
+		percolation.open(3, 0);
+		percolation.open(4, 0);
+		percolation.open(4, 2);
+		percolation.open(3, 2);
+		percolation.open(2, 2);
+		System.out.println(percolation.isFull(2, 2));
 	}
 }
