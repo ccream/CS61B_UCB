@@ -50,10 +50,10 @@ public class Percolation {
 		}
 		if(row == 0)  {
 			record.union(col, N*N);
-			recordNoBot.union(row*N+col+N, row*N+col);
+			recordNoBot.union(col, N*N);
 		}
 		else if(row == N-1)  {
-			record.union(row*N-N+col, N*N+1);
+			record.union(row*N+col, N*N+1);
 		}
 	}
 	
