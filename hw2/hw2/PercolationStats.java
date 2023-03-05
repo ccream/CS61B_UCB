@@ -22,7 +22,7 @@ public class PercolationStats {
 				int col = StdRandom.uniform(N);
 				temp.open(row, col);
 			}
-			stats[i] = (double)temp.numberOfOpenSites()/(N*N);
+			stats[i] = (1.0*temp.numberOfOpenSites())/(N*N);
 		}
 	}
 	
